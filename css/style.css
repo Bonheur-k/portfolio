@@ -1,0 +1,432 @@
+*{
+    margin: 0;   /*marge exterieure*/
+    padding: 0;  /*marge interieure*/
+    box-sizing: border-box;    
+}
+
+body{
+    width: 100%;
+    background-color:rgb(37, 36, 36);
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+h3.red{
+    color: rgb(201, 45, 84);
+    text-transform: uppercase;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-size: small;    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+/* Entete*/
+header{
+    width: 100%;    
+    background: red;
+}
+
+.header-container{
+    width: 90%;    
+    margin: auto;
+    display: flex; /* Alignemnt horizontal par defaut du Flexbox*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* logo*/
+div.logo a{
+    font-size: 40px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: beige;
+}
+
+/* menu navigation*/
+nav.menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none
+}
+
+
+nav.menu ul li{
+    margin-right:25px; 
+}
+
+nav.menu ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: beige;
+    text-transform: capitalize;
+}
+
+nav.menu ul li a:hover{
+    color: aquamarine;
+}
+
+
+/* cta*/
+
+button.cta{
+    padding: 18px;
+    border:1px solid honeydew;
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+
+button.cta:hover{
+    background-color: beige;
+}
+
+
+button.cta:hover a{
+    color: black;
+}
+
+
+button.cta a{ 
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: beige;
+    text-transform: capitalize;
+}
+
+hero section 
+
+.hero{
+    height: 80vh;
+    position: relative;
+}
+.hero-contenus{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 0;
+    padding-bottom: 0;
+}
+
+.hero-contenus h3{
+    color: rgb(226, 220, 220);
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.hero-contenus h1{
+    color: rgb(241, 237, 237);
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero-contenus h1 span.red{
+    color:rgb(223, 34, 75);
+}
+
+.hero-contenus p{
+    color: rgb(226, 220, 220);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+.herotexte{
+    flex: 1;
+}
+
+.heroimage{
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    padding-top: 120px;
+}
+
+.heroimage .imgcontainer{    
+    background-color: rgb(39, 38, 38);    
+    box-shadow: 0px 14px 8px rgba(228, 225, 225, 0.1);
+    height: 60%;    
+    width: 90%;    
+    overflow: visible; 
+    position: relative;       
+}
+
+.heroimage .imgcontainer img{
+  height: auto;
+  width: 100%; 
+  margin-top: -125px;  
+}
+
+.general{
+    padding: 100px 0;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social h4 , .skills h4{
+    color: azure;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+
+.social{
+    margin-right: 20px;
+}
+
+.s-media{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.s-media .media{
+    background: #229e4b;
+    padding: 20px;
+    box-shadow: 0px 14px 8px rgba(228, 225, 225, 0.1);
+    margin-right: 20px;
+}
+
+.s-media .media i{
+    color: azure;
+    font-size: 24px;
+} 
+
+ Services Section 
+.services{    
+    position: relative;
+    padding: 180px 0;
+}
+
+
+.services h2{
+    color: azure;
+font-size: 40px;
+margin-bottom: 15px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+letter-spacing: 3px;
+    
+}
+
+.services-items{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+
+}
+
+.services-items .service{
+  background-color: rgb(36, 33, 33);
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 8px rgba(228, 225, 225, 0.1);
+  text-align: center;
+  color: azure;
+}
+
+.services-items .service i{
+  color: red;
+  margin-bottom: 15px;
+  font-size: 30px;
+
+}
+
+.services-items .service h3{
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    
+}
+
+
+.services-items .service p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    font-size: 14px;
+
+}
+
+/* Portfolio Section */
+
+.portfolio, .blog{
+    padding: 120px 0;    
+}
+
+.portfolio .red, .blog .red{
+    text-align: center;
+}
+
+.portfolio h2, .blog h2{
+    color: azure;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 50px;
+    margin-bottom: 30px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+letter-spacing: 3px;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  
+}
+
+.items .item-box{
+    background-color: rgb(36, 33, 33);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 8px rgba(228, 225, 225, 0.1);    
+    color: azure;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-box .meta{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    margin:25px 0px    
+}
+
+.meta a.category{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 0, 85);
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.meta .like{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    gap: 5px; 
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.item-box h3{
+     color: rgb(226, 217, 217);
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+
+.item-box img{
+ width: 100%;
+ height: 250px;
+ border-radius: 10px;
+}
+
+.contact{
+    padding: 80px 0;
+}
+
+.contact .red{
+text-align: center;
+}
+
+h2{
+    font-size: 60PX;
+    color: azure;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 3px;
+}
+
+.contact-items{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+}
+
+.contact form {
+    background-color: red;
+}
+.contact-items .item-box{
+    box-shadow: 0px 10px 8px rgba(228, 225, 225, 0.1);  
+    padding: 20px;
+    padding-bottom: 60px;
+
+}
+
+.contact-items .item-box img {
+    height: auto;
+    width: 100%; 
+    margin-bottom: 25px;  
+}
+
+.contact-items .item-box .title {
+    font-size: 17px;
+    color: rgb(201, 42, 81);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    padding-bottom: 15px;
+}
+
+.contact-items .item-box p{
+    font-size: 15px;
+    color: rgb(189, 184, 184);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 15px;
+}
+
+.contact-items .item-box p span{
+    color: azure;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 12px;
+    letter-spacing: 1px;
+}
+
+.socio-media h4{
+    color: azure;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px !important;
+}
+
+.socio-media .links{
+    margin-top: 20px !important;
+}
+
+.socio-media .links a{
+    text-decoration: none;
+    font-size: 18px; 
+    color: azure;
+    background: #242323;  
+    padding: 20px; 
+    margin-right: 15px;
+    box-shadow: 0px 10px 8px rgba(228, 225, 225, 0.1);
+    border: 1px solid #242323;
+}

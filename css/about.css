@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+     padding:0;
+}
+
+body{
+background-color: black;
+width: 100%;
+}
+
+header{
+     width: 100%;
+    background:rgb(22, 21, 21);
+    padding: 30px 25px;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+}
+
+.logo a{
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    color: rgb(93, 172, 93);
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu ul li{
+    list-style: none; 
+}
+
+.menu ul li a{
+ text-decoration: khaki;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    color: #f5eeee;
+}
+
+.menu ul li a:hover{
+    color:rgb(69, 194, 69);
+}
+
+.cto{
+    background-color: rgb(18, 20, 20);
+    border-radius: 5px;
+    padding: 15px 20px;
+}
+
+.cto:hover{
+    background-color: rgb(84, 197, 84);
+ border:1px solid rgb(84, 223, 84);
+}
+
+.cto:hover a{
+    color:rgb(252, 242, 242);
+}
+
+.cto a{ 
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    color: rgb(83, 194, 194);
+    
+
+
+}
